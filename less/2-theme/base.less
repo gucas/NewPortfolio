@@ -17,6 +17,8 @@ html {
 
     -webkit-backface-visibility : hidden; // Animation bug for webkit.
     -webkit-tap-highlight-color : #FFF; // Customize color to match your design.
+    -ms-text-size-adjust     : 100%;
+    -webkit-text-size-adjust : 100%;
 }
 
 
@@ -31,7 +33,7 @@ html {
 body {
     background-color : #FFF; // Customize color to match your design.
     font-family      : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  // Customize to match your design.
-    font-weight      : 300; // Customize to match your design.
+    font-weight              : 100;
     word-wrap        : break-word;
     hyphens          : auto;
     font-size        : 16px;     // 2
@@ -67,7 +69,14 @@ figure {
 }
 
 ul { list-style : none; }
+a { text-decoration : none; }
 
 
 //  Allow only vertical resizing of textareas.
 textarea { resize : vertical; }
+
+// Gestion des placeholder.
+::-webkit-input-placeholder { color : @white; font-style : italic; }
+:-ms-input-placeholder      { color : @white; font-style : italic; }
+::-moz-placeholder          { color : @white; font-style : italic; } // Firefox 19+
+:-moz-placeholder           { color : @white; font-style : italic; } // Firefox 18-

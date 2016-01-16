@@ -1,0 +1,62 @@
+
+.wrapper-header {
+
+}
+
+.header-box {
+    width            : 100%;
+    text-align       : center;
+    background-color : @white;
+
+    .header-title {
+        position       : relative;
+        text-transform : uppercase;
+        font-weight    : 100;
+        margin         : 0;
+        text-align     : left;
+        transition: text-align .5s linear;
+        .size(2.7);
+    }
+
+    .title-link {
+        display : inline-block;
+        color   : @grey;
+        padding : 1rem 2rem;
+    }
+
+    .burger-btn {
+        position   : absolute;
+        display    : block;
+        width      : 3rem;
+        height     : 1.5rem;
+        top        : 50%;
+        margin-top : -.7rem;
+        right      : 2rem;
+        cursor     : pointer;
+
+        &.active .btn-item {
+            &:nth-child(1) { top : 0 ; }
+            &:nth-child(3) { top : 1.2rem; }
+        }
+    }
+
+    .btn-item {
+        border-radius: .3rem;
+        position         : absolute;
+        display          : block;
+        width            : 100%;
+        left             : ;
+        right            : 0;
+        height           : .3rem;
+        background-color : @grey;
+        transition       : top .1s linear;
+
+        &:nth-child(1) { top : .2rem; }
+        &:nth-child(2) { top : .6rem; }
+        &:nth-child(3) { top : 1rem; }
+    }
+}
+
+
+
+// font-family : 'Dancing Script', cursive;
