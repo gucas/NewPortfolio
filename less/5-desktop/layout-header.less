@@ -1,20 +1,64 @@
 
 .wrapper-header {
-
+overflow: hidden;
+background-color : rgba(255, 255, 255, .9);
 }
 
 .header-box {
 
     .header-title {
-        text-align : center;
+        float            : left;
+        background-color : transparent;
     }
 
     .title-link {
+        height      : 7rem;
+        line-height : 7rem;
     }
 
     .burger-btn { display : none; }
+
+    .nav-box {
+        position         : static;
+        float            : right;
+        display          : inline-block;
+        transform        : translateY(0);
+        width            : auto;
+        z-index          : auto;
+        background-color : transparent;
+    }
+
+    .nav-list {
+        float  : right;
+        width  : auto;
+        margin : 0;
+    }
+
+    .nav-item {
+        width            : auto;
+        border           : none;
+        background-color : transparent;
+        transition       : background-color .3s linear .1s;
+
+        &:hover { background-color : @grey-light; }
+
+        &:last-child {
+            width : auto;
+
+            &:hover { background-color : transparent; }
+        }
+    }
+
+    .nav-link { padding : 0 2rem; }
+
+    .link-contact {
+        width : 4rem;
+        height : 4rem;
+        margin: 1.5rem auto;
+    }
 }
 
+.wrapper-content { margin-top : 0; background-color : @blue; }
 
 
 // font-family : 'Dancing Script', cursive;
