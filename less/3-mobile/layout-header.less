@@ -18,6 +18,7 @@
 
     .header-title {
         text-transform   : uppercase;
+        // font-family : 'Dancing Script', cursive;
         font-weight      : 100;
         margin           : 0;
         text-align       : left;
@@ -26,7 +27,7 @@
     }
 
     .title-link {
-        display     : block;
+        display     : inline-block;
         color       : @grey;
         height      : 6rem;
         line-height : 6rem;
@@ -126,6 +127,11 @@
         //     left       : 50%;
         //     transition : right .3s linear;
         // }
+        // &:hover {
+        //     &:before { left  : 0;}
+        //     &:after  { right : 0;}
+        // }
+
 
         &.active,
         &:hover { transform : scale(1.1); }

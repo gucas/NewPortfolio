@@ -1,29 +1,68 @@
 .section {
-    height: 100%;
-    height: 100vh;
-    background-color: @blue;
-    display: table;
-    width: 100%;
-
+    display          : table;
+    width            : 100%;
+    height           : 100%;
+    height           : 100vh;
+    background-color : @blue;
 }
 
-.title {
+.title-box {
     display        : table-cell;
     vertical-align : middle;
     text-align     : center;
-    color          : @white;
-    font-weight    : 100;
-    margin         : -7rem 0 0;
+}
+
+.title {
+    position    : relative;
+    display     : inline-block;
+    color       : @white;
+    font-weight : 100;
+    margin      : -7rem 0 0 0;
     text-shadow : .08rem .08rem #e5e5e5,#1fb6d6 2px 2px,#1fb6d6 3px 3px,#1fb6d6 4px 4px,#1fb6d6 5px 5px,#1fb6d6 6px 6px,#1fb6d6 7px 7px,#1fb6d6 8px 8px,#1fb6d6 9px 9px,#1fb6d6 10px 10px,#1fb6d6 11px 11px,#1fb6d6 12px 12px,#1fb6d6 13px 13px,#1fb6d6 14px 14px,#1fb6d6 15px 15px,#1fb6d6 16px 16px,#1fb6d6 17px 17px,#1fb6d6 18px 18px,#1fb6d7 19px 19px,#1fb7d7 20px 20px,#1fb7d8 21px 21px,#1fb8d8 22px 22px,#1fb8d9 23px 23px,#1fb9d9 24px 24px,#1fb9da 25px 25px,#1fb9da 26px 26px,#1fbadb 27px 27px,#1fbadb 28px 28px,#1fbbdc 29px 29px,#1fbbdc 30px 30px,#20bcdd 31px 31px,#20bcdd 32px 32px,#20bcde 33px 33px,#20bdde 34px 34px,#20bddf 35px 35px,#20bedf 36px 36px,#20bee0 37px 37px,#20bfe0 38px 38px,#20bfe1 39px 39px,#20bfe1 40px 40px,#20c0e2 41px 41px,#20c0e2 42px 42px,#20c1e3 43px 43px,#20c1e3 44px 44px,#21c2e4 45px 45px,#21c2e4 46px 46px,#21c2e5 47px 47px,#21c3e5 48px 48px,#21c3e6 49px 49px,#21c4e6 50px 50px,#21c4e7 51px 51px,#21c5e7 52px 52px,#21c5e8 53px 53px,#21c5e8 54px 54px,#21c6e9 55px 55px,#21c6e9 56px 56px,#21c7ea 57px 57px,#21c7ea 58px 58px,#22c8eb 59px 59px;
 
     span {
         display : block;
-        .font-size(2.7);
+        .font-size(2.5);
 
         &:nth-child(1),
         &:nth-child(2) {
             font-family : 'Dancing Script', cursive;
-            .font-size(5);
+            .font-size(7);
+        }
+
+        // &:nth-child(3) {
+        //     opacity    : 0;
+        //     transition : opacity .3s linear .3s;
+        // }
+    }
+
+    // &:before,
+    // &:after {
+    //     position         : absolute;
+    //     content          : "";
+    //     bottom           : -5rem;
+    //     height           : .3rem;
+    //     background-color : @mango;
+    // }
+    //
+    // &:before {
+    //     left       : 50%;
+    //     right      : 50%;
+    //     transition : left .3s linear;
+    // }
+    //
+    // &:after {
+    //     right      : 50%;
+    //     left       : 50%;
+    //     transition : right .3s linear;
+    // }
+
+    &:hover {
+        // &:before { left : 0;}
+        // &:after {right      : 0;}
+
+        span:nth-child(3) {
+            opacity: 1;
         }
     }
 }
