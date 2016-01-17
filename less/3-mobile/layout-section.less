@@ -1,0 +1,65 @@
+
+// SECTION CONFIGURTION
+.section {
+    display : table;
+    width   : 100%;
+    height  : 100%;
+    height  : 100vh;
+    padding : 1rem;
+}
+
+.section-blue { background-color : @blue;
+
+    .title,
+    .txt { color : @white; }
+}
+
+.section-grey { background-color : @grey30;
+
+    .title,
+    .txt { color : @grey70; }
+}
+
+.section-white { background-color : @white;
+
+    .title,
+    .txt { color : @grey70; }
+}
+
+
+// VERTICAL ALIGNEMENT BOX
+.center-box {
+    display        : table-cell;
+    vertical-align : middle;
+    text-align     : center;
+}
+
+// TITLE
+.title {
+    display     : inline-block;
+    position    : relative;
+    margin      : -7rem 0 0 0;
+    padding     : 5rem;
+    font-weight : 100;
+    font-family : 'Dancing Script', cursive;
+    .font-size(9);
+}
+
+.title-item {
+    display : block;
+
+    &:nth-child(3) {
+        font-family : inherit;
+        .font-size(2.5);
+    }
+}
+
+
+// TEXTE
+.txt {
+    display    : block;
+    margin     : 0 auto 3rem;
+    max-width  : 60rem;
+    text-align : left;
+    .font-size(1.7);
+}

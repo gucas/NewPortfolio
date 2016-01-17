@@ -10,15 +10,15 @@
 //  1. For REM size police (=10px)
 html {
     box-sizing                  : border-box;
-    font-size                   : 62.5%;   // 1
-    line-height                 : 1.3;     // Customize
-    color                       : #222;    // Customize
+    font-size                   : 62.5%; // 1
+    line-height                 : 1.3; // Customize
+    color                       : #222; // Customize
     min-width                   : 32rem;
 
     -webkit-backface-visibility : hidden; // Animation bug for webkit.
-    -webkit-tap-highlight-color : #FFF; // Customize color to match your design.
-    -ms-text-size-adjust     : 100%;
-    -webkit-text-size-adjust : 100%;
+    -webkit-tap-highlight-color : @mango; // Customize color to match your design.
+    -ms-text-size-adjust        : 100%;
+    -webkit-text-size-adjust    : 100%;
 }
 
 
@@ -38,8 +38,8 @@ body {
     hyphens                 : auto;
     font-size               : 16px; // 2
     font-size               : 1.6rem; // 2
-    -moz-osx-font-smoothing : grayscale;
     overflow-x              : hidden;
+    // -moz-osx-font-smoothing : grayscale;
 }
 
 
@@ -48,8 +48,8 @@ body {
 //
 //  These selection rule sets have to be separate.
 //  Customize the background color to match your design.
-::-moz-selection { background : #b3d4fc; text-shadow : none; }
-::selection      { background : #b3d4fc; text-shadow : none; }
+::-moz-selection { background : @mango; text-shadow : none; }
+::selection      { background : @mango; text-shadow : none; }
 
 
 
