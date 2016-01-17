@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".burger-btn").click(function(){$(this).toggleClass("active"),$(".nav-box").toggleClass("active")})});
+$(document).ready(function(){$(".burger-btn").click(function(){$(this).toggleClass("active"),$(".nav-box").toggleClass("active")}),$(".menu-item").click(function(){$(this).toggleClass("active")})});

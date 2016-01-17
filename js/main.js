@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$('.nav-box').toggleClass('active');
 	});
 
-	// $('.nav-link').click(function(){
-	// 	$(this).toggleClass('active');
-	// });
+	$('.menu-item').click(function(){
+		$(this).toggleClass('active');
+	});
 });
